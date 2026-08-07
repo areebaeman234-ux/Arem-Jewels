@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Arem Jewels</title>
+<meta name="description" content="Arem Jewels was born in a small historic town, where craftsmanship is not a trend, it's a tradition.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">Arem <span>Jewels</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- BRAND STORY -->
+  <section class="hero" style="padding-top:96px; padding-bottom:70px;">
+    <div class="hero-inner">
+      <span class="eyebrow">Our Story</span>
+      <h1 style="font-size:clamp(2rem,4vw,2.9rem);">Craftsmanship isn&rsquo;t a trend here. It&rsquo;s a tradition.</h1>
+      <p>Arem Jewels was born in a small historic town, where every piece is handmade with care, designed to be worn for a lifetime. We believe jewellery should earn its place in your story &mdash; not just your jewellery box.</p>
+    </div>
+  </section>
+
+  <!-- PHOTO + BIO -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="bio">
+        <div class="bio-photo">
+          [ Insert real photo here ]<br>Portrait of the designer
+        </div>
+        <div class="bio-text">
+          <span class="eyebrow">The Maker</span>
+          <p>&ldquo;I&rsquo;m a designer who believes great design is about more than aesthetics &mdash; it&rsquo;s about connecting with people and earning their trust. I built this portfolio to prove that I can create websites that feel as intentional as the jewellery they showcase.&rdquo;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="divider"><span class="bar"></span><span class="mark">&#10022;</span><span class="bar"></span></div>
+        <h2>What We Stand For</h2>
+      </div>
+      <div class="values">
+        <div class="value">
+          <h3>Craftsmanship</h3>
+          <p>Every piece is made by hand, with attention to every detail.</p>
+        </div>
+        <div class="value">
+          <h3>Ethical Sourcing</h3>
+          <p>We source materials responsibly, because quality starts with integrity.</p>
+        </div>
+        <div class="value">
+          <h3>Timeless Design</h3>
+          <p>We don&rsquo;t follow trends &mdash; we create pieces that last.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="banner">
+    <p>See the pieces this story is built around.</p>
+    <div style="margin-top:28px;">
+      <a href="shop.html" class="btn btn-ghost-light">See Our Work</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wordmark">Arem <span style="color:#8A6D3B;">Jewels</span></div>
+  <ul class="foot-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>&copy; 2026 Arem Jewels. Handmade in a small historic town.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
