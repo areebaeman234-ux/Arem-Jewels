@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arem Jewels — Handmade Heirloom Jewellery</title>
+<meta name="description" content="We don't make trends. We make heirlooms. Handmade gold and silver jewellery, crafted by hand for women who value craftsmanship over fast fashion.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="wordmark">Arem <span>Jewels</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Handmade &middot; Gold &amp; Silver</span>
+      <h1>We don&rsquo;t make trends.<br>We make heirlooms.</h1>
+      <p>Handmade jewellery for women who value craftsmanship over fast fashion.</p>
+      <a href="shop.html" class="btn btn-solid">Explore the Collection</a>
+    </div>
+  </section>
+
+  <!-- FEATURED PIECES -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="divider"><span class="bar"></span><span class="mark">&#10022;</span><span class="bar"></span></div>
+        <h2>Featured Pieces</h2>
+        <p>A first look at the pieces our collectors return for &mdash; one from each collection.</p>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="piece">
+          <div class="piece-art">
+            <!-- Layered Necklace -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="#8A6D3B" stroke-width="1.3" stroke-linecap="round">
+              <ellipse cx="50" cy="32" rx="26" ry="14"/>
+              <ellipse cx="50" cy="42" rx="34" ry="19"/>
+              <ellipse cx="50" cy="55" rx="20" ry="11"/>
+              <circle cx="50" cy="66" r="3.2" fill="#8A6D3B" stroke="none"/>
+            </svg>
+          </div>
+          <span class="tag">Heritage Gold</span>
+          <h3>The Layered Aria</h3>
+          <p>Three gold lengths, worn as one.</p>
+        </div>
+
+        <div class="piece">
+          <div class="piece-art">
+            <!-- Asymmetric Pendant -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="#8A6D3B" stroke-width="1.3" stroke-linecap="round">
+              <path d="M20 18 C 40 18, 60 20, 78 26"/>
+              <path d="M55 26 L 62 46 L 48 58 L 40 40 Z"/>
+              <circle cx="55" cy="26" r="2" fill="#8A6D3B" stroke="none"/>
+            </svg>
+          </div>
+          <span class="tag">Silver Stories</span>
+          <h3>The Off-Center Muse</h3>
+          <p>An asymmetric silver pendant with quiet edge.</p>
+        </div>
+
+        <div class="piece">
+          <div class="piece-art">
+            <!-- Hammered Ring -->
+            <svg viewBox="0 0 100 100" fill="none" stroke="#8A6D3B" stroke-width="1.3" stroke-linecap="round">
+              <circle cx="50" cy="50" r="26"/>
+              <circle cx="50" cy="50" r="18"/>
+              <path d="M30 34 l3 3 M62 30 l3 4 M70 55 l4 2 M36 70 l2 4 M60 68 l3 3" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="tag">Custom Pieces</span>
+          <h3>The Maker&rsquo;s Band</h3>
+          <p>Hand-hammered, one of a kind, made to order.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGLINE BANNER -->
+  <section class="banner">
+    <p>&ldquo;Every piece is a small inheritance, made for the woman wearing it today.&rdquo;</p>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="alt">
+    <div class="wrap story">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">A Small Historic Town</span>
+        <h2>Fifteen years of hands, not machines</h2>
+        <p>Every Arem Jewels piece begins with a sketch and ends with a polish, shaped entirely by a local artisan. No factories, no shortcuts &mdash; just gold and silver worked by hand into something meant to be kept.</p>
+        <a href="about.html" class="btn" style="margin-top:18px;">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wordmark">Arem <span style="color:#8A6D3B;">Jewels</span></div>
+  <ul class="foot-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>&copy; 2026 Arem Jewels. Handmade in a small historic town.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
